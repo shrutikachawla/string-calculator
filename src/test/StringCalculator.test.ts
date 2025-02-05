@@ -20,7 +20,7 @@ describe("StringCalculator", () => {
 	});
 
 	it("throw exception for negative numbers", () => {
-		expect(calculator.add("1,-2,3")).toThrow(
+		expect(calculator.add("1,-2,3")).toThrowError(
 			"Negative numbers not allowed: -2"
 		);
 	});
